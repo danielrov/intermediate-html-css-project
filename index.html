@@ -1,13 +1,3 @@
-<!-- 
-Assignment
-For the main-content, use more grids to lay out the projects, announcements and trending items.
-Fill out some dummy content and placeholder images so you can position all of your grid items.
-Step 5: Some tips!
-When building the layout, apply background colors or borders to your containers to help you visualize your grid.
-It’s up to you whether to use pixels, fr units or both for your grid tracks.
-This project does not have to be responsive, but if you’d like to you can expand or shrink the project cards section when resizing the browser window.
- -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -74,24 +64,125 @@ This project does not have to be responsive, but if you’d like to you can expa
             <div class="projects">
                 <p class="titles">Your Projects</p>
                 <div class="project-grid">
-                    <div class="project-card"></div>
-                    <div class="project-card"></div>
-                    <div class="project-card"></div>
-                    <div class="project-card"></div>
-                    <div class="project-card"></div>
-                    <div class="project-card"></div>
+                    <div class="project-card">
+                        <div class="line"></div>
+                        <div class="card">
+                            <p class="card-title">Super Cool Project</p>
+                            <p class="card-text">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+                            <div class="card-icons">
+                                <img src="./icons/heart_icon.svg" alt="Heart Icon">
+                                <img src="./icons/calendar_icon.svg" alt="Calendar Icon">
+                                <img src="./icons/share_icon.svg" alt="Share Icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="line"></div>
+                        <div class="card">
+                            <p class="card-title">Less Cool Project</p>
+                            <p class="card-text">Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt, consectetur sapien et, facilisis dolor. Duis sem purus, dignissim ut sapien in, varius pellentesque lacus.</p>
+                            <div class="card-icons">
+                                <img src="./icons/heart_icon.svg" alt="Heart Icon">
+                                <img src="./icons/calendar_icon.svg" alt="Calendar Icon">
+                                <img src="./icons/share_icon.svg" alt="Share Icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="line"></div>
+                        <div class="card">
+                            <p class="card-title">Impossible App</p>
+                            <p class="card-text">In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis id.</p>
+                            <div class="card-icons">
+                                <img src="./icons/heart_icon.svg" alt="Heart Icon">
+                                <img src="./icons/calendar_icon.svg" alt="Calendar Icon">
+                                <img src="./icons/share_icon.svg" alt="Share Icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="line"></div>
+                        <div class="card">
+                            <p class="card-title">Easy Peasy App</p>
+                            <p class="card-text">Etiam cursus eros ac efficitur fringilla.
+                                Vestibulum dignissim urna eget accumsan aliquam. Curabitur dignissim nisi in tortor commodo, ac bibendum magna tincidunt.</p>
+                            <div class="card-icons">
+                                <img src="./icons/heart_icon.svg" alt="Heart Icon">
+                                <img src="./icons/calendar_icon.svg" alt="Calendar Icon">
+                                <img src="./icons/share_icon.svg" alt="Share Icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="line"></div>
+                        <div class="card">
+                            <p class="card-title">Ad Blocker</p>
+                            <p class="card-text">Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis. Aliquam sed malesuada eros.</p>
+                            <div class="card-icons">
+                                <img src="./icons/heart_icon.svg" alt="Heart Icon">
+                                <img src="./icons/calendar_icon.svg" alt="Calendar Icon">
+                                <img src="./icons/share_icon.svg" alt="Share Icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="line"></div>
+                        <div class="card">
+                            <p class="card-title">Money Maker</p>
+                            <p class="card-text">Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerisque tortor purus sit amet ex.Pellentesque mollis nec sem vel aliquam.</p>
+                            <div class="card-icons">
+                                <img src="./icons/heart_icon.svg" alt="Heart Icon">
+                                <img src="./icons/calendar_icon.svg" alt="Calendar Icon">
+                                <img src="./icons/share_icon.svg" alt="Share Icon">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="announcements">
                 <p class="titles">Announcements</p>
-                <div class="card">
-
+                <div class="side-card">
+                    <p class="announcement-title">Site Maintenance</p>
+                    <p class="announcement">Vesuloulum conalmentum tenus lacus, in accumsan elit maximus ac. Donec hendrerit sodales congue...</p>
+                    <div class="divisor"></div>
+                    <p class="announcement-title">Community Share Day</p>
+                    <p class="announcement">Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum accumsan portitor...</p>
+                    <div class="divisor"></div>
+                    <p class="announcement-title">Updated Privacy Policy</p>
+                    <p class="announcement">Phasellus efficitur nisi eget elit consecretur. eder concimentum ante auctor. Cras fringilla sagittis sem in mails..</p>
                 </div>
             </div>
             <div class="trending">
                 <p class="titles">Trending</p>
-                <div class="card">
-
+                <div class="side-card">
+                    <div class="trending-users">
+                        <img src="./icons/dog.png" alt="Dog Avatar" class="avatar">
+                        <div class="">
+                            <p class="trending-username">@tegan</p>
+                            <p class="trending-app">World Peace Builder</p>
+                        </div>
+                    </div>
+                    <div class="trending-users">
+                        <img src="./icons/panda.png" alt="Panda Avatar" class="avatar">
+                        <div class="">
+                            <p class="trending-username">@morgan</p>
+                            <p class="trending-app">Super Cool Project</p>
+                        </div>
+                    </div>
+                    <div class="trending-users">
+                        <img src="./icons/rabbit.png" alt="Rabbit Avatar" class="avatar">
+                        <div class="">
+                            <p class="trending-username">@kendall</p>
+                            <p class="trending-app">Life Changing App</p>
+                        </div>
+                    </div>
+                    <div class="trending-users">
+                        <img src="./icons/dog.png" alt="Dog Avatar" class="avatar">
+                        <div class="">
+                            <p class="trending-username">@tegan</p>
+                            <p class="trending-app">No Traffic Maker</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

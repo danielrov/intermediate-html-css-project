@@ -132,7 +132,6 @@ input[type="search"] {
   display: grid;
   grid-template-columns: 2fr 1fr;
   padding: 0px 16px;
-  margin-top: 16px;
   align-items: center;
 }
 
@@ -207,12 +206,88 @@ input[type="search"] {
   grid-template-rows: max-content 1fr;
 }
 
+.titles {
+  font-weight: bolder;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: 8px 1fr;
+}
+
+.line {
+  background-color: rgb(241, 180, 57);
+  border-radius: 8px 0 0 8px;
+}
+
 .card {
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  padding: 0 24px;
+}
+
+.card-title {
+  align-self: self-end;
+  font-weight: bolder;
+}
+
+.card-text {
+  color: rgb(117, 117, 117);
+  font-size: 1rem;
+  line-height: normal;
+  /* width: 80%; */
+}
+
+.card-icons {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  justify-content: end;
+  gap: 24px;
+}
+
+.side-card {
   background-color: white;
   border-radius: 8px;
   margin-top: 16px;
 }
 
-.titles {
+.trending-users {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 16px;
+  align-items: center;
+}
+
+.trending-username {
+  font-size: 0.9rem;
+}
+
+.side-card {
+  padding: 16px;
+  display: grid;
+}
+
+.trending-app {
+  color: rgb(117, 117, 117);
+  font-size: .8rem;
+  line-height: normal;
+}
+
+.divisor {
+  height: 1px;
+  background-color: lightgrey;
+}
+
+.announcement-title {
   font-weight: bolder;
+  font-size: .8rem;
+}
+
+.announcements .side-card {
+  padding: 24px;
+}
+
+.announcement {
+  font-weight: lighter;
+  font-size: .7rem;
 }
