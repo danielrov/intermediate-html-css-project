@@ -66,11 +66,11 @@
 }
 
 .sidebar .title {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 .sidebar .nav {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   display: grid;
   gap: 16px;
   padding-left: 8px;
@@ -86,8 +86,133 @@
 
 .header {
   background-color: white;
+  padding: 16px;
+  padding-bottom: 0px;
+}
+
+.searchbar-user-info {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  gap: 64px;
+  align-items: center;
+  font-weight: bolder;
+}
+
+.searchbar {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 16px;
+  padding: 16px;
+  align-items: center;
+}
+
+input[type="search"] {
+  border-radius: 16px;
+  border: none;
+  background-color: rgb(226, 232, 240);
+  padding: 4px;
+  padding-left: 16px;
+  max-width: 600px;
+}
+
+.user-info {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  padding-right: 64px;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar {
+  width: 50px;
+}
+
+.welcoming-buttons {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 0px 16px;
+  margin-top: 16px;
+  align-items: center;
+}
+
+.welcoming {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  gap: 16px;
+  align-items: center;
+}
+
+.user-welcoming {
+  font-weight: bolder;
+}
+
+.username {
+  font-size: 1.4rem;
+}
+
+.avatar-welcoming {
+  width: 75px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  justify-content: space-around;
+  padding-right: 32px;
+}
+
+.button-header {
+  padding: 6px 24px;
+  background-color: var(--main-color-blue);
+  border: none;
+  color: white;
+  font-weight: bolder;
+  border-radius: 16px;
 }
 
 .main-content {
   background-color: rgb(226, 232, 240);
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 16px;
+  padding-bottom: 64px;
+}
+
+.projects {
+  grid-row: span 2;
+  padding-top: 8px;
+  display: grid;
+  grid-template-rows: max-content 1fr;
+  gap: 16px;
+  padding-right: 24px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 24px;
+}
+
+.project-card {
+  background-color: white;
+  border-radius: 8px;
+}
+
+.announcements,
+.trending {
+  padding-top: 8px;
+  display: grid;
+  grid-template-rows: max-content 1fr;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  margin-top: 16px;
+}
+
+.titles {
+  font-weight: bolder;
 }

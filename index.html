@@ -1,21 +1,12 @@
-<!-- Assignment
-Step 3: Nesting
-Taking it one section at a time, begin nesting child elements under the parent elements in the HTML. Remember that you can keep making grid containers within grid containers.
-In the sidebar, use more grids to lay out the navigation and branding sections.
-In the header, use more grids to lay out the search bar, user info and buttons.
+<!-- 
+Assignment
 For the main-content, use more grids to lay out the projects, announcements and trending items.
 Fill out some dummy content and placeholder images so you can position all of your grid items.
-Step 4: Gather assets
-Once you have your grid layout complete you can either recreate the dashboard example above or style your own design.
-Check out some color palettes from Tailwind.
-All of the icons and more can be downloaded as SVGs from Material Design Icons.
-Choose your own fonts! The design example uses Roboto, which is available with Google fonts. (You may want to review the More Text Styles Lesson for information about how to include external fonts in your projects).
 Step 5: Some tips!
 When building the layout, apply background colors or borders to your containers to help you visualize your grid.
 It’s up to you whether to use pixels, fr units or both for your grid tracks.
 This project does not have to be responsive, but if you’d like to you can expand or shrink the project cards section when resizing the browser window.
-You don’t have to make a pixel perfect match with the design example. Consider this an opportunity to practice your CSS skills with your own designs.
-Don’t forget to push your finished dashboard to GitHub. Use GitHub Pages to publish it to the world! -->
+ -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -50,8 +41,60 @@ Don’t forget to push your finished dashboard to GitHub. Use GitHub Pages to pu
                 </ul>
             </div>
         </div>
-        <div class="header"></div>
-        <div class="main-content"></div>
+        <div class="header">
+            <div class="searchbar-user-info">
+                <div class="searchbar">
+                    <label for="search">
+                        <img src="./icons/search_icon.svg" alt="Search Icon">
+                    </label>
+                    <input type="search" id="search" name="search">
+                </div>
+                <div class="user-info">
+                    <img src="./icons/notifications_icon.svg" alt="Notifications Icon">
+                    <img src="./icons/panda.png" alt="Panda Avatar" class="avatar">
+                    <span>Morgan Oakley</span>
+                </div>
+            </div>
+            <div class="welcoming-buttons">
+                <div class="welcoming">
+                    <img src="./icons/panda.png" alt="Panda Avatar" class="avatar-welcoming">
+                    <div class="user-welcoming">
+                        <p class="salute">Hi there</p>
+                        <p class="username">Morgan Oakley (@morgan)</p>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="button-header">New</button>
+                    <button class="button-header">Upload</button>
+                    <button class="button-header">Share</button>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="projects">
+                <p class="titles">Your Projects</p>
+                <div class="project-grid">
+                    <div class="project-card"></div>
+                    <div class="project-card"></div>
+                    <div class="project-card"></div>
+                    <div class="project-card"></div>
+                    <div class="project-card"></div>
+                    <div class="project-card"></div>
+                </div>
+            </div>
+            <div class="announcements">
+                <p class="titles">Announcements</p>
+                <div class="card">
+
+                </div>
+            </div>
+            <div class="trending">
+                <p class="titles">Trending</p>
+                <div class="card">
+
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
